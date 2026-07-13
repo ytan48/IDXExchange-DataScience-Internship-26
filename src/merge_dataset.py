@@ -14,23 +14,13 @@ import pandas as pd
 # - Some months have ListAgentAOR and BuyerAgentAOR.
 # - Some old compensation columns disappear later.
 #
-# To avoid losing any useful field, this script first collects the full list
-# of column names from all files. Then each CSV is re-aligned to that full
-# column list before merging. If a file does not have a column, pandas fills
-# that column with missing values for that file's rows.
+# To avoid losing any useful field, this script first collects the full list of column names from all files. Then each CSV is re-aligned to that full
+# column list before merging. If a file does not have a column, pandas fills that column with missing values for that file's rows.
 #
-# Only one output file is created:
+# One output file is created:
 # data/merged_crmls_sold.csv
 
 
-# ============================================================
-# Folder settings
-# ============================================================
-# __file__ is the path of this script:
-# D:/project-VS/IDX Exchange Data Science Internship/src/merge_dataset.py
-#
-# parent is the src folder.
-# parent.parent is the project folder.
 PROJECT_FOLDER = Path(__file__).resolve().parent.parent
 
 # All original CSV files are stored here.
