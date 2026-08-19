@@ -1,0 +1,29 @@
+{
+  "rows": {
+    "test": 12697,
+    "train": 304822,
+    "validation": 11880
+  },
+  "target_filter": {
+    "lower_price": 190000.0,
+    "lower_quantile": 0.005,
+    "upper_price": 8295150.000000256,
+    "upper_quantile": 0.995
+  },
+  "test": {
+    "mae": 155260.6338542077,
+    "mape_percent": 11.805810560966322,
+    "mdape_percent": 8.007705592105264,
+    "r2": 0.9042986299703895
+  },
+  "test_month": "2026-06",
+  "train_end_month": "2026-04",
+  "train_start_month": "2024-01",
+  "validation": {
+    "mae": 155668.22245501893,
+    "mape_percent": 11.667851669944461,
+    "mdape_percent": 7.963903708133971,
+    "r2": 0.9041129940548481
+  },
+  "validation_month": "2026-05"
+}

@@ -1,0 +1,212 @@
+{
+  "artifact_version": 1,
+  "fields": [
+    {
+      "default": "today",
+      "label": "Valuation date",
+      "name": "ValuationDate",
+      "required": true,
+      "widget": "date"
+    },
+    {
+      "default": 1804.0,
+      "dtype": "float",
+      "label": "Living area (sq ft)",
+      "name": "LivingArea",
+      "required": true,
+      "step": 10.0,
+      "widget": "number"
+    },
+    {
+      "default": 3,
+      "dtype": "int",
+      "label": "Bedrooms",
+      "name": "BedroomsTotal",
+      "required": true,
+      "step": 1,
+      "widget": "number"
+    },
+    {
+      "default": 2,
+      "dtype": "int",
+      "label": "Bathrooms",
+      "name": "BathroomsTotalInteger",
+      "required": true,
+      "step": 1,
+      "widget": "number"
+    },
+    {
+      "default": 7227.0,
+      "dtype": "float",
+      "label": "Lot size (sq ft)",
+      "name": "LotSizeSquareFeet",
+      "required": true,
+      "step": 100.0,
+      "widget": "number"
+    },
+    {
+      "default": 1976,
+      "dtype": "int",
+      "label": "Year built",
+      "name": "YearBuilt",
+      "required": true,
+      "step": 1,
+      "widget": "number"
+    },
+    {
+      "default": 2.0,
+      "dtype": "float",
+      "label": "Garage spaces",
+      "name": "GarageSpaces",
+      "required": true,
+      "step": 1.0,
+      "widget": "number"
+    },
+    {
+      "default": 2.0,
+      "dtype": "float",
+      "label": "Total parking",
+      "name": "ParkingTotal",
+      "required": true,
+      "step": 1.0,
+      "widget": "number"
+    },
+    {
+      "default": 1.0,
+      "dtype": "float",
+      "label": "Stories",
+      "name": "Stories",
+      "required": true,
+      "step": 1.0,
+      "widget": "number"
+    },
+    {
+      "default": 34.0921109,
+      "dtype": "float",
+      "label": "Latitude",
+      "name": "Latitude",
+      "required": true,
+      "step": 0.0001,
+      "widget": "number"
+    },
+    {
+      "default": -118.044203,
+      "dtype": "float",
+      "label": "Longitude",
+      "name": "Longitude",
+      "required": true,
+      "step": 0.0001,
+      "widget": "number"
+    },
+    {
+      "default": "92253",
+      "label": "Postal code",
+      "name": "PostalCode",
+      "options_source": "preprocessor.category_levels",
+      "required": true,
+      "widget": "select"
+    },
+    {
+      "default": "Los Angeles",
+      "label": "County",
+      "name": "CountyOrParish",
+      "options_source": "preprocessor.category_levels",
+      "required": true,
+      "widget": "select"
+    },
+    {
+      "default": "699 - Not Defined",
+      "label": "MLS area",
+      "name": "MLSAreaMajor",
+      "options_source": "preprocessor.category_levels",
+      "required": true,
+      "widget": "select"
+    },
+    {
+      "default": "One",
+      "label": "Levels",
+      "name": "Levels",
+      "options_source": "preprocessor.category_levels",
+      "required": true,
+      "widget": "select"
+    },
+    {
+      "default": "Los Angeles",
+      "label": "City",
+      "name": "City",
+      "options_source": "preprocessor.category_levels",
+      "required": true,
+      "widget": "select"
+    },
+    {
+      "default": "Los Angeles Unified",
+      "label": "Unified school district",
+      "name": "UnifiedSchoolDistrict",
+      "options_source": "preprocessor.category_levels",
+      "required": true,
+      "widget": "select"
+    },
+    {
+      "default": false,
+      "label": "Private pool",
+      "name": "PoolPrivateYN",
+      "required": true,
+      "widget": "toggle"
+    },
+    {
+      "default": true,
+      "label": "View",
+      "name": "ViewYN",
+      "required": true,
+      "widget": "toggle"
+    },
+    {
+      "default": true,
+      "label": "Attached garage",
+      "name": "AttachedGarageYN",
+      "required": true,
+      "widget": "toggle"
+    },
+    {
+      "default": false,
+      "label": "New construction",
+      "name": "NewConstructionYN",
+      "required": true,
+      "widget": "toggle"
+    },
+    {
+      "default": true,
+      "label": "Fireplace",
+      "name": "FireplaceYN",
+      "required": true,
+      "widget": "toggle"
+    }
+  ],
+  "forbidden_features": [
+    "CloseDate"
+  ],
+  "raw_input_features": [
+    "ValuationDate",
+    "LivingArea",
+    "BedroomsTotal",
+    "BathroomsTotalInteger",
+    "LotSizeSquareFeet",
+    "YearBuilt",
+    "GarageSpaces",
+    "ParkingTotal",
+    "Stories",
+    "Latitude",
+    "Longitude",
+    "PostalCode",
+    "CountyOrParish",
+    "MLSAreaMajor",
+    "Levels",
+    "PoolPrivateYN",
+    "ViewYN",
+    "AttachedGarageYN",
+    "NewConstructionYN",
+    "FireplaceYN",
+    "City",
+    "UnifiedSchoolDistrict"
+  ]
+}
