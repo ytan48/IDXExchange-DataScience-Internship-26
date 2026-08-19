@@ -42,6 +42,11 @@ class ArtifactBundleTests(unittest.TestCase):
             self.artifacts.manifest["raw_input_features"],
         )
 
+    def test_artifact_json_uses_canonical_lf_newlines(self):
+        for path in ARTIFACT_DIR.glob("*.json"):
+            with self.subTest(path=path.name):
+                self.assertNotIn(b"\r\n", path.read_bytes())
+
     def test_valuation_date_drives_month_features(self):
         january_property = {
             **self.property_data,

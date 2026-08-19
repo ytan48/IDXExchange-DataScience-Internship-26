@@ -371,6 +371,7 @@ def _write_json(path: Path, payload: dict[str, Any]) -> None:
     path.write_text(
         json.dumps(payload, indent=2, sort_keys=True),
         encoding="utf-8",
+        newline="\n",
     )
 
 

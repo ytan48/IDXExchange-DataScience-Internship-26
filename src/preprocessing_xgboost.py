@@ -134,6 +134,7 @@ class XGBoostPreprocessor:
         destination.write_text(
             json.dumps(metadata, indent=2),
             encoding="utf-8",
+            newline="\n",
         )
 
     @classmethod
