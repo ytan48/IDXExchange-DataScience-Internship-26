@@ -84,6 +84,13 @@ During feature engineering, each property point is spatially joined to a Califor
 | Test MdAPE | 8.01% |
 
 
+## Future Work
+
+- Add a reproducible hyperparameter-tuning stage for the final XGBoost model. Compare Grid Search with **Random Search** under chronological validation, tuning parameters such as tree depth, learning rate, number of estimators, subsampling, column sampling, and regularization.
+- Replace the median-error reference band with a calibrated prediction interval that better represents uncertainty for each property.
+- Automate monthly model refreshes and monitor performance drift as new CRMLS sales become available.
+
+
 ## Tech Stack
 
 | Area | Tools |
